@@ -1,0 +1,57 @@
+Make sure to do this before every release:
+
+Testing
+- Download Translations from Launchpad and convert them to xml (described in util/xml2po/README)
+- Run Unit Tests
+- Test all functionality and selected translations on emulator 1.6 (base), 2.3 (still common) and 4.4 (latest)
+- Test with "Immediately destroy activities" debug setting
+- Test all text inputs with virtual keyboard
+- Test with public sdcard image all the bug notes to spot regressions
+- Test sharing a note and receiving a note to/from any other app
+- Test creating and deleting shortcuts on homescreen
+
+Preparing the release
+- Remove "dev" from version number in AndroidManifest.xml (android:versionCode and android:versionName), README
+- Make sure TODO is up-to-date
+- Update the NEWS file
+- Make sure README is accurate
+- Follow Android's doc on publishing apps to the marketplace
+- Generate ChangeLog (bzr log -v -n0 --gnu-changelog > ChangeLog)
+- Make sure AUTHORS is accurate (grep '<.*@.*>' ChangeLog | awk '// {print $2,$3,$4}'  | sort | uniq)
+
+Releasing on launchpad
+- Disable logging (set org.tomdroid.util.TLog.LOGGING_ENABLED to false)
+- Export an unsigned apk
+- Sign the apk
+-- if I don't remember my alias again!: keytool -keystore <keystore> -list -v
+-- jarsigner -verbose -keystore <keystore> <apk> <alias>
+-- verify: jarsigner -verify -verbose -certs <apk>
+- Align the apk
+-- zipalign -f -v 4 <old apk> <new apk>
+-- verify: zipalign -c -v 4 <new apk>
+- Test the signed apk
+- Test the upgrade from the previous signed release to the next one
+- bzr tag the release / Commit / push
+- Produce the source release tarball (bzr export --format=tgz tomdroid-src-X.X.X.tar.gz) 
+- Mark the milestone as released on launchpad
+- Put the files on launchpad (SRC, README, APK)
+- Announce on launchpad
+
+Releasing on the Google Play Store / Amazon Appstore
+- Make sure description and all is still accurate. The strings are in res/values/strings.xml (and check for updated translations too)
+- Take screenshots and put them in data/market-screenshots/ and upload them to the market (if relevant)
+- Publish
+
+Spread the word
+- Email to Tomdroid's mailing list (Tomboy/Snowy too if it's an important milestone)
+- post to identi.ca / LinkedIn status / facebook
+- ohloh, freshmeat
+- Blog post about it including NEWS but also what I see for +1 (link the launchpad's announce to it and post blog link on mailing lists) 
+
+Next
+- Create the next milestone on launchpad
+- Mark bugs as fix released
+-- email interface edit@bugs.launchpad.net is useful for that. <space>bug $bugid\n<space>status fixreleased
+- Increment version number and append "dev" to android:versionCode in AndroidManifest.xml
+- android:debuggable="true" in AndroidManifest.xml
+ 

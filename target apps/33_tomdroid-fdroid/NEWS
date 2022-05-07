@@ -1,0 +1,263 @@
+﻿Tomdroid NEWS
+
+Copyright 2008, 2009, 2010, 2011, 2012 Olivier Bilodeau <olivier@bottomlesspit.org>
+Copyright 2013, 2014 Stefan Hammer <j.4@gmx.at>
+
+Project hosting: https://launchpad.net/tomdroid/
+
+Please report bugs to: https://bugs.launchpad.net/tomdroid
+
+Mailing list: tomdroid-dev@lists.launchpad.net 
+Join it at: https://launchpad.net/~tomdroid-dev
+
+For more details and developer visible changes see the ChangeLog
+
+-------------------------------------------------------------------------------
+Tomdroid 0.8.0 - "<name>" released on <date>
+
+-------------------------------------------------------------------------------
+Tomdroid 0.7.5 - "Christmas surprise" released on 2014-01-04
+
+* updated translations
+* fixed some crashes reported on Google Play (lp:1264479, lp:1264496, lp:1264499, lp:1264506, lp:1264976)
+* now you can also specify an absolute path as folder location (lp:1157396)
+
+-------------------------------------------------------------------------------
+Tomdroid 0.7.4 - "Christmas surprise" released on 2013-12-24
+
+* updated translations: new languages are Occitan, Slovak, Albanian, Sundanese
+* fixed some more minor bugs related to strings and spelling mistakes
+
+-------------------------------------------------------------------------------
+Tomdroid 0.7.3 beta - "Almost there!" released on 2013-10-24
+
+* updated translations: new languages are Croatian, Icelandic, Javanese, Vietnamese and English (Australia)!
+* fixed even more bugs, complete list on: https://launchpad.net/tomdroid/+milestone/0.7.3
+* fixed bug lp:1155646 Sometimes a empty Conflict Dialoug appears upon sync
+* fixed bug lp:1232624 Suddenly started to crash everytime it syncs with Rainy
+* Complete rewrite of the note-content to XML handler
+* fixed bug lp:1067604 Parser crash resulting in note corruption while editing bullet lists
+* added option to automatically sync on startup (lp:1038353)
+* fixed bug lp:1120488 Please add custom HTTP header to syncing requests (for Rainy sync)
+* fixed strings related bugs: lp:1068772, lp:1068761, lp:1068791, lp:1068760
+* fixed bug lp:1070787 Note Title should be more obvious in Conflict resolving dialogue
+* It is now possible to change sync-method, sync-server, folder location without loosing any notes!
+* fixed bug lp:1051932 &amp; gets replaced with &amp;amp; on clicking save button
+* fixed bug lp:1064149 Tomdroid Sync fails, datetime_format error
+* fixed bug lp:1074894 NotesList -> Longpress -> Revert -> CRASH!
+* fixed bug lp:1074661 Opening *.note file results in unparsed raw xml code and the uuid as title (when opened from GMail)
+* fixed bug lp:1068681 Tomdroid should just show up in the "open file with" Android dialogue when the extension is *.note 
+* fixed bug lp:1068689 Share menu button in the NoteView does not show "send as text or as file" dialogue 
+* fixed bug lp:1068684 Toast message is showing "Error sending note to %1$s."  
+* fixed bug lp:1074602 Tomdroid does not send the "create-data" field in JSON when web syncing   
+ 
+
+-------------------------------------------------------------------------------
+Tomdroid 0.7.2 beta - "For the Love of Monkey" released on 2012-10-17
+
+* added GMail-style two-color pane and selector
+* added ability to receive text-shares from other notes (lp:1039104)
+* added ability to send and receive note files
+* added auto-backup to SD Card preference
+* made First Note translatable
+* moved search function to main activity (allowing two-pane landscape view in results)
+* added option to show deleted notes in list
+* added ability to import plain text
+* added file picker to import plain text and note files from within Tomdroid
+* added options to turn off hyperlink creation
+* fixed bug lp:1039703 Tomdroid crashes when rotating the device during synchronisation
+* fixed bug lp:1039824 Crash when rotate on Revert All
+* fixed bug lp:1039814 Crash on Backup Notes
+* fixed bug lp:1039671 Crash when the server URL that includes "illegal characters"
+* fixed bug lp:1040333 Crash on Revert
+* fixed bug lp:1040338 Crash on Cancel
+* fixed bug lp:1040389 Share/Send from chrome or play crash
+* fixed bug lp:1040551 Tomdroid two-way sync to SD card messes up titles
+* fixed bug lp:1041792 Error is occured on text decoration in beta Edit
+* fixed bug lp:1049026 Error, when note starts with illegal xml character
+* fixed bug lp:1053366 Search Results: No "not found" text in empty notes-list
+
+-------------------------------------------------------------------------------
+Tomdroid 0.7.1 beta - "Fast paced" released on 2012-08-21
+
+* Actionbar for all versions of Android
+* Converted format bar to sliding drawer
+* Added progress bar and toast notifications to preferences
+* Cosmetic improvements and bug fixes with conflict resolution
+* Added cancel button to sync
+* Fixed revert all for deleted notes
+* Added routine to avoid full sync if server revision is old (only push changed notes)
+* Set note content entry type to "sentence caps"
+* Usability and cosmetic improvements (lp:1038118, lp:1038352)
+* fixed bug lp:1038115 (beta) do not scroll list to top after deleting a note
+* fixed bug lp:1038119 (beta) syncing is not smart :)
+* fixed bug lp:1038352 tapping on blank area should go to end of line
+* fixed bug lp:1038769 Typo in the string #41
+* fixed bug lp:1038968 NullPointerException on SD Card sync with notes causing parse error
+
+-------------------------------------------------------------------------------
+Tomdroid 0.7 beta - "House of Fun" - Editing and Two-Way Sync!
+
+Editing Features:
+* Rich text editor for editing and formatting notes (credit: http://code.google.com/p/android-richtexteditor/)
+* Ability to create new notes
+* Ability to delete local notes (lp:657563)
+* Automatic renaming of notes on duplicate title (as Note 1, Note 2, etc.)
+* Note saved automatically on pause
+* Ability to revert changes
+
+Sync Features:
+* Two-way sync by default, one-way "pull" sync via "Revert" button (lp:549647)
+* Note conflict resolution screen when notes are of different date and both older or newer than last sync date
+* Automatic authentication - if you use Ubuntu One, pressing "Sync" on first launch is enough to authenticate and sync
+* updating progress bar with information on current task, number of notes
+* Ability to cancel sync via button (lp:592946)
+* switching sync services/servers doesn't clear notes database anymore
+* switching sync servers clears authentication, doesn't authenticate (see "Automatic authentication", above)
+
+UI Tweaks:
+* moved Tomdroid toolbar into native ActionBar with compatibility for older APKS (https://blueprints.launchpad.net/tomdroid/+spec/actionbar-redesign)
+* added option to change from light to dark themes
+* added basic tablet integration (https://blueprints.launchpad.net/tomdroid/+spec/tablet-ui)
+
+Preference Tweaks
+* Added preference for changing base font size
+* Added preference button for backing up notes to SD card (when using online sync)
+* Added preference button for removing all notes from remote service
+* added option to hide/show note templates
+* added option to clear local notes database (useful if switching sync services)
+
+Misc:
+* fixed SQL query should use "?" (lp:880322)
+
+-------------------------------------------------------------------------------
+Version 0.6.1 - "Polyglot" released on 2013-03-18
+
+* Backported fix for lp:1134866 and lp:982749 from beta branch
+* fixed lp:1132389 Tomdroid 0.6.0 Crash on Rotation in Authentication
+* fixed lp:1153289 Accept self signed SSL certificates to be able to sync securely with Rainy (www.notesync.org)
+* New translations: bs, el, eo, fa, fi, nb, si, ta, bg, et, gl, id, la, ml, nl, sr, zh-rTW
+* Updated translations: ar, ca, cs, da, de, en-rGB, es, eu, fo, fr, gd, hi, hu, it, ja, ko, ms, pl, pt-rBR, pt, ru, sv, te, tr, ug, uk, zh-rCN, zh
+
+-------------------------------------------------------------------------------
+Version 0.6.0 - "Small World" released on 2012-08-16
+
+* Fix crash when authenticating a server URL containing line breaks (Stefan Hammer, lp:902855)
+* SD card synchronisation now removes deleted messages from Database (Stefan Hammer, lp:533933 )
+* Can specify folder for SD Card Sync (ie: dropbox) (Stefan Hammer, lp:837119)
+* Creating home-screen shortcuts to notes is now possible (Piotr Adamski, 
+  lp:882703)
+* Reload current Note after sync (Stefan Hammer, lp:675117)
+* Under the hood changes (Piotr Adamski)
+* Switched to the Launchpad Translation Platform (Stefan Hammer)
+* Tons of new translations by the awesome Translators on Launchpad:
+   ar: Youssef Habri
+   ast: ASTUR2000
+   ca: Antonio Vicién Faure
+   cs: Jan Dolejš
+   da: Mads Boserup Lauritsen
+   de: Henrik Graßhoff, Stefan Hammer
+   en_GB: Vibhav Pant
+   es: Alicia García Adames, Clemens Niesner, Fitoschido, JoLiSh, João Santana
+   eu: Asier Iturralde Sarasola
+   fo: Jógvan Olsen
+   fr: Léo POUGHON
+   gd: alasdair caimbeul
+   hi: Vibhav Pant
+   hu: Péter Trombitás
+   it: Michele Galimberti, nicoelba
+   ja: Koichi Akabe
+   ko: MinSik CHO
+   pl: Piotr Adamski, Hubert Schlussarz Ślósarski, Łukasz Serafinowski
+   pt_BR: João Santana, eniomarconcini
+   pt: Sérgio Marques
+   ru: Bernhard Hauer, Ivan Akulov, Mirzaeva Asalle, Vyacheslav Sharmanov
+   sv: Daniel Ruus, stoft
+   te: Praveen Illa
+   tr: Mesut Yaver
+   ug: Sahran
+   uk: Mirzaeva Asalle
+   zh: Isabel Heger
+
+-------------------------------------------------------------------------------
+Version 0.5.0 - "long delayed because of fatherhood release" released on 2011-09-05
+
+* Search within notes from Tomdroid and system integrated search (Stefan Hammer)
+* Add a context menu with the ability to send a note (Edouard Richard)
+* Several usability improvements (Stefan Hammer)
+* Higher quality icons including brand new Tomdroid icon (Stefan Hammer, 
+  lp:593351)
+* Added UI feedback for "selected" and "pressed" events (Stefan Hammer, 
+  lp:799327)
+* List indentation increased + wrapping fix (Matthew Rasmus, lp:660116)
+* Parsing fixes regarding bullet lists (Matthew Rasmus, lp:697996)
+* Improved error handling and reporting (Benoit Garret, lp:660057, lp:689473)
+* Date on the note list is now displayed according to the phone's locale
+  (Matthew Rasmus, lp:659743)
+* Fixed SD card synchronization crashing on large note collections (Thomas 
+  Frenzel, lp:534213)
+* Fixed a crasher when sending a short note (Stefan Hammer, lp:800176)
+* More content can be translated (Benoit Soyeux)
+* New German translation (Stefan Hammer)
+* Updated French translation (Benoit Soyeux)
+
+-------------------------------------------------------------------------------
+Version 0.4.1 - "I didn't do it!" (fixed with duct tape) released on 2010-10-15
+
+* Fixed sync issues related to note identifiers (Stuart Langridge, lp:657477)
+* Error messages available in logs even in released builds (lp:657561)
+* Some strings translated to French (Benoit Soyeux)
+
+Version 0.4.0 - "I didn't do it!" released on 2010-10-09
+* One-way Note Synchronization! Two providers for now: Tomboy Web and SD Card 
+  (Benoit Garret, Rodja Trappe)
+* Vastly modernized and improved UI (Rodja Trappe, Guilherme Salgado, Matthew 
+  Stevenson, #549643)
+* Notebook templates are now hidden from note list (Benoit Garret, 
+  Guilherme Salgado, #360732)
+* Fixed warning dialog reappearing after phone rotation (Benoit Garret, #541793)
+* New note on first run giving some useful instructions (#588800)
+
+Version 0.3.1 - fundationem (fixed with a tie wrap)
+* Fixed important parsing issue with notes in +xx:xx timezones (#520543)
+* Fixed error-reporting of date parsing errors
+* Only one error displayed per synchronization attempts instead of one per note
+
+Version 0.3.0 - fundationem
+Android 1.5 or later required
+* Instant startup -- database back-end instead of files (Benoît Garret)
+* New "Sync from SD Card" menu item that will populate the notes database with
+  the notes in tomdroid/ on the SD card (Benoît Garret)
+* Significantly smaller App (went from ~380Kb to ~35Kb)
+* Note list is now sorted showing last modified notes first
+* Notification when "Sync from SD Card" is complete
+* Note title no longer shown in the note text
+* Fixed note parsing errors (#364850, #483101)
+* Fixed phone numbers in note titles (#512204)
+* Improved help messages
+* Improved error reporting to the user
+* Removed the "Load from Web" not-so-useful feature (Benoît Garret)
+
+Version 0.2.0 - this is all wrong
+Development is done using SDK 1.5 but the application is compatible with 1.x
+* Performance improvements (on my ADP1 ~50 notes loads twice as fast)
+* Responsiveness improvements: you can now see the screen updating the note 
+  list when it's parsing notes and interact with it
+* Usability/UI improvements (#364851, Benoît Garret)
+* Text no longer changes color when scrolling (#364425)
+* Fixed concurrency crashes (#389437)
+* Messages are now clearer when there are no notes in the tomdroid/ folder vs 
+  when the folder doesn't exist
+* Improved usability of the URL input dialog to load a Web note
+* Better error reporting to user when loading a note from the Web
+* Better Android lifecycle management
+* Developer related fixes (#364770, Michael Fletcher)
+
+Version 0.1.0 - the baby eating release
+* Show the list of all notes in the tomdroid directory on the sdcard
+* View individual Tomboy notes. 
+  All formatting tags should be supported.
+  Notebooks, tags and addins will not be understood.
+* You can load a note from a Web URL.
+  In that case, links to other notes won't work.
+
