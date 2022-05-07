@@ -17,10 +17,10 @@ All the source code of AutoSQDroid is also publicly available for facilitating t
 
 The above version of the software has been tested in our experiment and can run successfully. In addition, please start the emulator before running AutoSQDroid (you can see this [link](https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd) for how to creating and using [avdmanager](https://developer.android.com/studio/command-line/avdmanager)). 
 
-## Subject Requirements([video tutorial](https:www.github.com))
+## Subject Requirements([video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt))
 AutoSQDroid can test both on open-source and closed-source apps:
 * Closed-source apps: the users can directly run “python main.py apk_path” to test the apk.
-* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https:www.github.com)). 
+* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt)). 
 
 ## Settings
 Before running AutoSQDroid, please update the [configure.py](https://github.com/androidAppGuard/AutoSQDroid/blob/main/AutoSQDroid/configure.py) as follows:
@@ -100,7 +100,6 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Gadgetbridge | 79798 | 0.46.0 | Reader | <https://codeberg.org/Freeyourgadget/Gadgetbridge/src/tag/0.46.0> |
 | K-9 | 93455 | 5.731 | Sociality | <https://github.com/k9mail/k-9/tree/5.731> |
 | Signal | 228382 | v5.5.0 | Sociality | <https://github.com/signalapp/Signal-Android/tree/v5.5.0> |
-
 ## Revealed Bugs
 
 
