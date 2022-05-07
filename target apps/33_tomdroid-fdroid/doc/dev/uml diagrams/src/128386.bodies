@@ -1,3 +1,0 @@
-class NotesFilter
-!!!130690.java!!!	accept(inout dir : File, in name : String) : boolean
-			return (name.endsWith(".note"));

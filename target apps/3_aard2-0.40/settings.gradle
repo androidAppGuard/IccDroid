@@ -1,3 +1,0 @@
-include ':slobj'
-include ':slobber'
-include ':aard2-android'
