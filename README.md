@@ -20,10 +20,10 @@ The above version of the software has been tested in our experiment and can run 
 ## Subject Requirements([video tutorial](https:www.github.com))
 AutoSQDroid can test both on open-source and closed-source apps:
 * Closed-source apps: the users can directly run “python main.py apk_path” to test the apk.
-* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https:www.github.com) and [plugins/dataflow/DataFlowAnalysis.java](https:www.github.com) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https:www.github.com)). 
+* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https:www.github.com)). 
 
 ## Settings
-Before running AutoSQDroid, please update the [configure.py](https:www.github.com) as follows:
+Before running AutoSQDroid, please update the [configure.py](https://github.com/androidAppGuard/AutoSQDroid/blob/main/AutoSQDroid/configure.py) as follows:
 ```python
   # Dataflow Server info
   SERVER_HOST = "127.0.0.1"
@@ -58,9 +58,9 @@ The output contents are placed in folder ``<apk_dir>/<apk_name>`` and contain co
 	* crash_log_X: record the exception stack log of crash ``crash X``.
 
 # Detailed Description
-In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Version``, ``Source code`` and the revealed bugs.
-
-|APK Name| ELOC | Version|Strategy|GIthub Link|
+In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Version``, ``Strategy`` and the revealed bugs.
+## Target Apps
+|APK Name| Executable Lines of Codes| Version|Strategy|GIthub Link|
 |---|---|---|---|---|
 | Batterydog | 778 | master | Tool | <https://sourceforge.net/p/andbatdog/code/HEAD/tree/> |
 | PDFViewer | 1108 | v3.0 | Read | <https://github.com/JavaCafe01/PdfViewer/tree/v3.0> |
@@ -83,13 +83,13 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | FairEmail | 18073 |1.200 |Sociality | <https://github.com/M66B/FairEmail/tree/1.200> |
 | Vanilla | 18604 |1.1.0 | Music | <https://github.com/vanilla-music/vanilla/tree/1.1.0> |
 | Timber | 20238 |v1.6.1 | Sociality | <https://github.com/fabmazz/Timber/tree/v1.6.1>  |
-| Materialistic | 21919 |78 | Music | < https://github.com/hidroh/materialistic/tree/78> |
+| Materialistic | 21919 |78 | Music | <https://github.com/hidroh/materialistic/tree/78> |
 | BetterBatteryStats | master |1.200 | Tool | <https://github.com/asksven/BetterBatteryStats/tree/master> |
-| AnyMemo | 23486 |10.11.3 |Music | < https://github.com/helloworld1/AnyMemo/tree/10.11.3> |
+| AnyMemo | 23486 |10.11.3 |Music | <https://github.com/helloworld1/AnyMemo/tree/10.11.3> |
 | Uhabits | 26224 |v1.7.11 | Sport | <https://github.com/iSoron/uhabits/tree/v1.7.11>  |
 | Wikipedia | 29557 | r2.7.50350-r-2021-04-02 | Education | <https://github.com/wikimedia/apps-android-wikipedia/tree/r/2.7.50350-r-2021-04-02> |
 | Feeder | 31358 |1.8.30 | Read | <https://gitlab.com/spacecowboy/Feeder/-/tree/1.8.30> |
-| Runnerup | 34714 | v2.0.3.0 | Sport | < https://github.com/jonasoreland/runnerup/tree/v2.0.3.0> |
+| Runnerup | 34714 | v2.0.3.0 | Sport | <https://github.com/jonasoreland/runnerup/tree/v2.0.3.0> |
 | AmazeFileManager | 34790 |v3.3.2 | Tool | <https://github.com/TeamAmaze/AmazeFileManager/tree/v3.3.2>  |
 | APhotoManager | 36606 |v0.8.1.200212 | Tool | <https://github.com/k3b/APhotoManager/tree/v0.8.1.200212> |
 | Book-Catalogue | 41638 |v5.2.2 | Education | <https://github.com/eleybourn/Book-Catalogue/tree/v5.2.2> |
@@ -100,4 +100,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Gadgetbridge | 79798 | 0.46.0 | Reader | <https://codeberg.org/Freeyourgadget/Gadgetbridge/src/tag/0.46.0> |
 | K-9 | 93455 | 5.731 | Sociality | <https://github.com/k9mail/k-9/tree/5.731> |
 | Signal | 228382 | v5.5.0 | Sociality | <https://github.com/signalapp/Signal-Android/tree/v5.5.0> |
+
+## Revealed Bugs
+
 
