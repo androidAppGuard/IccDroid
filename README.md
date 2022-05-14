@@ -60,8 +60,8 @@ The output contents are placed in folder ``<apk_dir>/<apk_name>`` and contain co
 # Detailed Description
 In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Version``, ``Strategy`` and the revealed bugs.
 ## Target Apps
-|APK Name| Executable Lines of Codes| Version|Strategy|GIthub Link|
-|---|---|---|---|---|
+|APK Name| Issue State | Cause | Details |
+|---|---|---|---|
 | AmazeFileManager | Confirmed | NullPointerException | <https://github.com/TeamAmaze/AmazeFileManager/issues/3311> |
 | AntennaPod | Confirmed | XmlPullParserException | <https://github.com/AntennaPod/AntennaPod/issues/5885> |
 | Batterydog | Unresponse | ArrayIndexOutOfBoundsException | <https://sourceforge.net/p/andbatdog/discussion/957397/thread/97a9f569f4/> |
