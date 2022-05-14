@@ -100,6 +100,27 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Gadgetbridge | 79798 | 0.46.0 | Reader | <https://codeberg.org/Freeyourgadget/Gadgetbridge/src/tag/0.46.0> |
 | K-9 | 93455 | 5.731 | Sociality | <https://github.com/k9mail/k-9/tree/5.731> |
 | Signal | 228382 | v5.5.0 | Sociality | <https://github.com/signalapp/Signal-Android/tree/v5.5.0> |
-## Revealed Bugs
 
+## Revealed Bugs
+|APK Name| Issue State | Cause |Details|
+|---|---|---|---|
+| AmazeFileManager | Confirmed | - | <https://github.com/TeamAmaze/AmazeFileManager/issues/3311> |
+| AntennaPod | Confirmed | - | <https://github.com/AntennaPod/AntennaPod/issues/5885> |
+| Batterydog | Unresponse | - | <https://sourceforge.net/p/andbatdog/discussion/957397/thread/97a9f569f4/> |
+| AlarmClock | Unresponse | - | <https://github.com/yuriykulikov/AlarmClock/issues/451> |
+| Aadr2  | Confirmed | - | <https://github.com/itkach/aard2-android/issues/90> |
+| AnyMemo  | Unresponse | - | <https://github.com/helloworld1/AnyMemo/issues/525> |
+| AnyMemo  | Unresponse | - | <https://github.com/helloworld1/AnyMemo/issues/526> |
+| BookCatalogue  | Confirmed | - | <https://github.com/eleybourn/Book-Catalogue/issues/877> |
+| BookCatalogue  | Unresponse | - | <https://github.com/eleybourn/Book-Catalogue/issues/878> |
+| APhotoManager  | Unresponse | - | <https://github.com/k3b/APhotoManager/issues/200> |
+| Betterbatterystats  | Unresponse | - | <https://github.com/asksven/BetterBatteryStats/issues/888> |
+| Budgetwatch | Unresponse | - | <https://github.com/brarcher/budget-watch/issues/216> |
+| CatimaLoyalty | Fixed | - | <https://github.com/CatimaLoyalty/Android/issues/881> |
+| CatimaLoyalty | Confirmed | - | <https://github.com/CatimaLoyalty/Android/issues/880> |
+| Gadgetbridg | Unresponse | - | <https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/2659> |
+| Runnerup | Unresponse | - | <https://github.com/jonasoreland/runnerup/issues/1109> |
+| SimpleFileManager | Real | - | <https://github.com/mick88/filemanager/issues/13> |
+| Simpletask | Real | - | <https://github.com/mpcjanssen/simpletask-android/issues/1172> |
+| Swiftp | Unresponse | - | <https://github.com/ppareit/swiftp/issues/174> |
 
