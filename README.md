@@ -109,7 +109,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Batterydog | Unresponse | ArrayIndexOutOfBoundsException | <https://sourceforge.net/p/andbatdog/discussion/957397/thread/97a9f569f4/> |
 | AlarmClock | Unresponse | ActivityNotFoundException | <https://github.com/yuriykulikov/AlarmClock/issues/451> |
 | Aadr2  | Confirmed | NullPointerException | <https://github.com/itkach/aard2-android/issues/90> |
-| AnyMemo  | Unresponse | ExpatParser$ParseException | <https://github.com/helloworld1/AnyMemo/issues/525> |
+| AnyMemo  | Confirmed | ExpatParser$ParseException | <https://github.com/helloworld1/AnyMemo/issues/525> |
 | AnyMemo  | Unresponse | StringIndexOutOfBoundsException | <https://github.com/helloworld1/AnyMemo/issues/526> |
 | BookCatalogue  | Confirmed | DeadObjectException | <https://github.com/eleybourn/Book-Catalogue/issues/877> |
 | BookCatalogue  | Unresponse | NullPointerException | <https://github.com/eleybourn/Book-Catalogue/issues/878> |
