@@ -114,7 +114,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | BookCatalogue  | Confirmed | DeadObjectException | <https://github.com/eleybourn/Book-Catalogue/issues/877> |
 | BookCatalogue  | Unresponse | NullPointerException | <https://github.com/eleybourn/Book-Catalogue/issues/878> |
 | APhotoManager  | Unresponse | RuntimeException | <https://github.com/k3b/APhotoManager/issues/200> |
-| Betterbatterystats  | Unresponse | BatteryInfoUnavailableException  | <https://github.com/asksven/BetterBatteryStats/issues/888> |
+| Betterbatterystats  | Confirmed | BatteryInfoUnavailableException  | <https://github.com/asksven/BetterBatteryStats/issues/888> |
 | Budgetwatch | Unresponse | FileNotFoundException | <https://github.com/brarcher/budget-watch/issues/216> |
 | CatimaLoyalty | Fixed | IllegalArgumentException | <https://github.com/CatimaLoyalty/Android/issues/881> |
 | CatimaLoyalty | Confirmed | ActivityNotFoundException | <https://github.com/CatimaLoyalty/Android/issues/880> |
