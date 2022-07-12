@@ -113,7 +113,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | AnyMemo  | Unresponse | StringIndexOutOfBoundsException | <https://github.com/helloworld1/AnyMemo/issues/526> |
 | BookCatalogue  | Confirmed | DeadObjectException | <https://github.com/eleybourn/Book-Catalogue/issues/877> |
 | BookCatalogue  | Confirmed | NullPointerException | <https://github.com/eleybourn/Book-Catalogue/issues/878> |
-| APhotoManager  | Unresponse | RuntimeException | <https://github.com/k3b/APhotoManager/issues/200> |
+| APhotoManager  | Confirmed | RuntimeException | <https://github.com/k3b/APhotoManager/issues/200> |
 | Betterbatterystats  | Confirmed | BatteryInfoUnavailableException  | <https://github.com/asksven/BetterBatteryStats/issues/888> |
 | Budgetwatch | Unresponse | FileNotFoundException | <https://github.com/brarcher/budget-watch/issues/216> |
 | CatimaLoyalty | Fixed | IllegalArgumentException | <https://github.com/CatimaLoyalty/Android/issues/881> |
