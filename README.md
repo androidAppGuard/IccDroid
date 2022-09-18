@@ -120,6 +120,6 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | CatimaLoyalty | Confirmed | ActivityNotFoundException | <https://github.com/CatimaLoyalty/Android/issues/880> |
 | Gadgetbridg | Unresponse | IllegalStateException | <https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/2659> |
 | Runnerup | Confirmed | ConnectionException | <https://github.com/jonasoreland/runnerup/issues/1109> |
-| SimpleFileManager | Real | NullPointerException | <https://github.com/mick88/filemanager/issues/13> |
+| SimpleFileManager | Unresponse | NullPointerException | <https://github.com/mick88/filemanager/issues/13> |
 | Simpletask | Confirmed | IllegalArgumentException | <https://github.com/mpcjanssen/simpletask-android/issues/1172> |
 | Swiftp | Unresponse | ActivityNotFoundException  | <https://github.com/ppareit/swiftp/issues/174> |
