@@ -122,4 +122,4 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Runnerup | Confirmed | ConnectionException | <https://github.com/jonasoreland/runnerup/issues/1109> |
 | SimpleFileManager | Unresponse | NullPointerException | <https://github.com/mick88/filemanager/issues/13> |
 | Simpletask | Confirmed | IllegalArgumentException | <https://github.com/mpcjanssen/simpletask-android/issues/1172> |
-| Swiftp | Unresponse | ActivityNotFoundException  | <https://github.com/ppareit/swiftp/issues/174> |
+| Swiftp | Fixed | ActivityNotFoundException  | <https://github.com/ppareit/swiftp/issues/174> |
