@@ -108,7 +108,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | AntennaPod | Confirmed | XmlPullParserException | <https://github.com/AntennaPod/AntennaPod/issues/5885> |
 | Batterydog | Unresponse | ArrayIndexOutOfBoundsException | <https://sourceforge.net/p/andbatdog/discussion/957397/thread/97a9f569f4/> |
 | AlarmClock | Fixed | ActivityNotFoundException | <https://github.com/yuriykulikov/AlarmClock/issues/451> |
-| Aadr2  | Confirmed | NullPointerException | <https://github.com/itkach/aard2-android/issues/90> |
+| Aadr2  | Fixed | NullPointerException | <https://github.com/itkach/aard2-android/issues/90> |
 | AnyMemo  | Confirmed | ExpatParser$ParseException | <https://github.com/helloworld1/AnyMemo/issues/525> |
 | AnyMemo  | Unresponse | StringIndexOutOfBoundsException | <https://github.com/helloworld1/AnyMemo/issues/526> |
 | BookCatalogue  | Confirmed | DeadObjectException | <https://github.com/eleybourn/Book-Catalogue/issues/877> |
@@ -117,7 +117,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Betterbatterystats  | Confirmed | BatteryInfoUnavailableException  | <https://github.com/asksven/BetterBatteryStats/issues/888> |
 | Budgetwatch | Unresponse | FileNotFoundException | <https://github.com/brarcher/budget-watch/issues/216> |
 | CatimaLoyalty | Fixed | IllegalArgumentException | <https://github.com/CatimaLoyalty/Android/issues/881> |
-| CatimaLoyalty | Confirmed | ActivityNotFoundException | <https://github.com/CatimaLoyalty/Android/issues/880> |
+| CatimaLoyalty | Fixed | ActivityNotFoundException | <https://github.com/CatimaLoyalty/Android/issues/880> |
 | Gadgetbridg | Unresponse | IllegalStateException | <https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/2659> |
 | Runnerup | Confirmed | ConnectionException | <https://github.com/jonasoreland/runnerup/issues/1109> |
 | SimpleFileManager | Unresponse | NullPointerException | <https://github.com/mick88/filemanager/issues/13> |
