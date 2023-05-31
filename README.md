@@ -63,7 +63,7 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 |APK Name| Executable Lines of Codes| Version|Strategy|GIthub Link|
 |---|---|---|---|---|
 | PDFViewer | 1108 | v3.0 | Read | <https://github.com/JavaCafe01/PdfViewer/tree/v3.0> |
-| whohasmystuff | 1552 |1.0.38 | Finance | <https://gitlab.com/stovocor/whohasmystuff/-/tree/1.0.38> |
+| Swiftp | 5248 |v2.19 | Tool | <https://github.com/ppareit/swiftp/tree/v2.19> |
 | Privacy-friendly-notes | 3330 |v1.0.2 | Read | <https://github.com/SecUSo/privacy-friendly-notes/tree/v1.0.2> |
 | Dokuwiki | 5344 |v0.17 | Education | <https://github.com/fabienli/DokuwikiAndroid/tree/v0.17> |
 | CatimaLoyalty | 6131 |v1.6.0 | Tool | <https://github.com/CatimaLoyalty/Android/tree/v1.6.0> |
