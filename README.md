@@ -62,20 +62,12 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 ## Target Apps
 |APK Name| Executable Lines of Codes| Version|Strategy|GIthub Link|
 |---|---|---|---|---|
-| Batterydog | 778 | master | Tool | <https://sourceforge.net/p/andbatdog/code/HEAD/tree/> |
 | PDFViewer | 1108 | v3.0 | Read | <https://github.com/JavaCafe01/PdfViewer/tree/v3.0> |
-| Alogcat | 1525 | master | Tool | <https://archive.softwareheritage.org/browse/origin/http://alogcat.googlecode.com/svn//directory/> |
 | whohasmystuff | 1552 |1.0.38 | Finance | <https://gitlab.com/stovocor/whohasmystuff/-/tree/1.0.38> |
-| Passwordmaker | 2489 |master | Security | <https://github.com/tasermonkey/android-passwordmaker> |
-| Currency | 2548 |v1.37 | Finance | <https://github.com/billthefarmer/currency/tree/v1.37> |
 | Privacy-friendly-notes | 3330 |v1.0.2 | Read | <https://github.com/SecUSo/privacy-friendly-notes/tree/v1.0.2> |
-| Notes | 3331 |v1.10 | Read | <https://github.com/billthefarmer/notes/tree/v1.10> |
-| Simple-File-Manager | 4003 |master | Tool| <https://github.com/mick88/filemanager> |
-| Swiftp | 5248 |v2.19 | Tool | <https://github.com/ppareit/swiftp/tree/v2.19> |
 | Dokuwiki | 5344 |v0.17 | Education | <https://github.com/fabienli/DokuwikiAndroid/tree/v0.17> |
 | CatimaLoyalty | 6131 |v1.6.0 | Tool | <https://github.com/CatimaLoyalty/Android/tree/v1.6.0> |
 | Aard2 | 6619 |0.40 | Education | <https://github.com/itkach/aard2-android/tree/0.40> |
-| Simpletask | 6964 |10.9.0 | Tool | <https://github.com/mpcjanssen/simpletask-android/tree/10.9.0> |
 | Budget-watch | 7430 |v0.21.4 | Finance | <https://github.com/brarcher/budget-watch/tree/v0.21.4> |
 | tomdroid | 8076 |master | Finance | <https://github.com/tomboy-notes/tomdroid> |
 | AlarmClock | 9092 |3.02.02 | Tool | <https://github.com/yuriykulikov/AlarmClock/tree/3.02.02>  |
@@ -86,7 +78,6 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | Materialistic | 21919 |78 | Music | <https://github.com/hidroh/materialistic/tree/78> |
 | BetterBatteryStats | master |1.200 | Tool | <https://github.com/asksven/BetterBatteryStats/tree/master> |
 | AnyMemo | 23486 |10.11.3 |Music | <https://github.com/helloworld1/AnyMemo/tree/10.11.3> |
-| Uhabits | 26224 |v1.7.11 | Sport | <https://github.com/iSoron/uhabits/tree/v1.7.11>  |
 | Wikipedia | 29557 | r2.7.50350-r-2021-04-02 | Education | <https://github.com/wikimedia/apps-android-wikipedia/tree/r/2.7.50350-r-2021-04-02> |
 | Feeder | 31358 |1.8.30 | Read | <https://gitlab.com/spacecowboy/Feeder/-/tree/1.8.30> |
 | Runnerup | 34714 | v2.0.3.0 | Sport | <https://github.com/jonasoreland/runnerup/tree/v2.0.3.0> |
@@ -99,27 +90,21 @@ In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Ver
 | MyExpenses | 63275 | r398 | Finance | <https://github.com/mtotschnig/MyExpenses/tree/r398> |
 | Gadgetbridge | 79798 | 0.46.0 | Reader | <https://codeberg.org/Freeyourgadget/Gadgetbridge/src/tag/0.46.0> |
 | K-9 | 93455 | 5.731 | Sociality | <https://github.com/k9mail/k-9/tree/5.731> |
-| Signal | 228382 | v5.5.0 | Sociality | <https://github.com/signalapp/Signal-Android/tree/v5.5.0> |
 
 ## Revealed Bugs
 |APK Name| Issue State | Cause | Details |
 |---|---|---|---|
 | AmazeFileManager | Confirmed | NullPointerException | <https://github.com/TeamAmaze/AmazeFileManager/issues/3311> |
 | AntennaPod | Confirmed | XmlPullParserException | <https://github.com/AntennaPod/AntennaPod/issues/5885> |
-| Batterydog | Unresponse | ArrayIndexOutOfBoundsException | <https://sourceforge.net/p/andbatdog/discussion/957397/thread/97a9f569f4/> |
 | AlarmClock | Fixed | ActivityNotFoundException | <https://github.com/yuriykulikov/AlarmClock/issues/451> |
 | Aadr2  | Fixed | NullPointerException | <https://github.com/itkach/aard2-android/issues/90> |
-| AnyMemo  | Confirmed | ExpatParser$ParseException | <https://github.com/helloworld1/AnyMemo/issues/525> |
-| AnyMemo  | Unresponse | StringIndexOutOfBoundsException | <https://github.com/helloworld1/AnyMemo/issues/526> |
+| AnyMemo  | Confirmed | ExpatParserException | <https://github.com/helloworld1/AnyMemo/issues/525> |
 | BookCatalogue  | Confirmed | DeadObjectException | <https://github.com/eleybourn/Book-Catalogue/issues/877> |
 | BookCatalogue  | Confirmed | NullPointerException | <https://github.com/eleybourn/Book-Catalogue/issues/878> |
 | APhotoManager  | Confirmed | RuntimeException | <https://github.com/k3b/APhotoManager/issues/200> |
 | Betterbatterystats  | Confirmed | BatteryInfoUnavailableException  | <https://github.com/asksven/BetterBatteryStats/issues/888> |
-| Budgetwatch | Unresponse | FileNotFoundException | <https://github.com/brarcher/budget-watch/issues/216> |
 | CatimaLoyalty | Fixed | IllegalArgumentException | <https://github.com/CatimaLoyalty/Android/issues/881> |
 | CatimaLoyalty | Fixed | ActivityNotFoundException | <https://github.com/CatimaLoyalty/Android/issues/880> |
-| Gadgetbridg | Unresponse | IllegalStateException | <https://codeberg.org/Freeyourgadget/Gadgetbridge/issues/2659> |
 | Runnerup | Confirmed | ConnectionException | <https://github.com/jonasoreland/runnerup/issues/1109> |
-| SimpleFileManager | Unresponse | NullPointerException | <https://github.com/mick88/filemanager/issues/13> |
-| Simpletask | Confirmed | IllegalArgumentException | <https://github.com/mpcjanssen/simpletask-android/issues/1172> |
 | Swiftp | Fixed | ActivityNotFoundException  | <https://github.com/ppareit/swiftp/issues/174> |
+| Simpletask | Confirmed | IllegalArgumentException | <https://github.com/mpcjanssen/simpletask-android/issues/1172> |
