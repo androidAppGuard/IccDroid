@@ -1,5 +1,5 @@
 # IccDroid Prototype
-IccDroid is an automated testing tool based on reinforcement learning to find ICC-related bugs in Android apps. IccDroid leverages hybrid analysis to build a more complete ICC call graph. Based on this graph, IccDroid further designs an ICC-guided exploration strategy based on Q-learning to improve the testing effectiveness in bug finding. So far, IccDroid has found [13 previously unknown ICC-related bugs](https://github.com/androidAppGuard/IccDroid/tree/main#revealed-bugs), all of which have been confirmed by the app developers and five have already been fixed.
+IccDroid is an automated testing tool based on reinforcement learning to find ICC-related bugs in Android apps. IccDroid leverages hybrid analysis to build a more complete ICC call graph. Based on this graph, IccDroid further designs an ICC-guided exploration strategy based on Q-learning to improve the testing effectiveness in bug finding. So far, IccDroid has found [13 previously unknown ICC-related bugs](https://github.com/androidAppGuard/IccDroid/tree/main#revealed-icc-related-bugs), all of which have been confirmed by the app developers and five have already been fixed.
 
 # Update
 All the source code of IccDroid is also publicly available for facilitating the development of automated testing. 
@@ -59,7 +59,7 @@ The output contents are placed in folder ``<apk_dir>/<apk_name>`` and contain co
 
 # Detailed Description
 In order to better reproduce IccDroid, we provide the app’s ``Link``, ``Version``, ``Strategy`` and the revealed bugs.
-## Target Apps
+## 28 Real-world Target Apps
 |APK Name| Executable Lines of Codes| Version|Strategy|GIthub Link|
 |---|---|---|---|---|
 | PDFViewer | 1108 | v3.0 | Read | <https://github.com/JavaCafe01/PdfViewer/tree/v3.0> |
