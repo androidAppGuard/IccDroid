@@ -42,7 +42,7 @@ Before running IccDroid, please update the [configure.py](https://github.com/and
 Other configuration information of the configure.py can be selected according to user customization or default configuration.
 
 ## Running
-For applications that require permission or login, you should install apk on the emulator and grant the permissions or login the account begore testing. Then you start AutoSQdroid by:
+For applications that require permission or login, you should install apk on the emulator and grant the permissions or login the account begore testing. Then you start IccDroid by:
 ```shell
   # enter workspace of IccDroid
   cd /opt/IccDroid 
