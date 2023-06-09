@@ -1,5 +1,5 @@
 # IccDroid Prototype
-IccDroid is an automated testing tool based on reinforcement learning to find ICC-related bugs in Android apps. IccDroid leverages hybrid analysis to build a more complete ICC call graph. Based on this graph, IccDroid further designs an ICC-guided exploration strategy based on Q-learning to improve the testing effectiveness in bug finding. So far, IccDroid has found 13 previously unknown ICC-related bugs, all of which have been confirmed by the app developers and five have already been fixed.
+IccDroid is an automated testing tool based on reinforcement learning to find ICC-related bugs in Android apps. IccDroid leverages hybrid analysis to build a more complete ICC call graph. Based on this graph, IccDroid further designs an ICC-guided exploration strategy based on Q-learning to improve the testing effectiveness in bug finding. So far, IccDroid has found [13 previously unknown ICC-related bugs](https://github.com/androidAppGuard/IccDroid/tree/main#revealed-bugs), all of which have been confirmed by the app developers and five have already been fixed.
 
 # Update
 All the source code of IccDroid is also publicly available for facilitating the development of automated testing. 
@@ -91,7 +91,7 @@ In order to better reproduce IccDroid, we provide the app’s ``Link``, ``Versio
 | Gadgetbridge | 79798 | 0.46.0 | Reader | <https://codeberg.org/Freeyourgadget/Gadgetbridge/src/tag/0.46.0> |
 | K-9 | 93455 | 5.731 | Sociality | <https://github.com/k9mail/k-9/tree/5.731> |
 
-## Revealed Bugs
+## Revealed ICC-related Bugs
 |APK Name| Issue State | Cause | Details |
 |---|---|---|---|
 | AmazeFileManager | Confirmed | NullPointerException | <https://github.com/TeamAmaze/AmazeFileManager/issues/3311> |
