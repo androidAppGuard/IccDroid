@@ -81,7 +81,7 @@ public class DataFlowAnalysis extends BroadcastReceiver {
             }
         }).start();
     }
-
+	
     private static void handleConnection(InputStream socketIn, OutputStream socketOut) {
         final BufferedReader netInput = new BufferedReader(new InputStreamReader(socketIn));
         final PrintWriter netOutput = new PrintWriter(socketOut, false);
@@ -95,7 +95,7 @@ public class DataFlowAnalysis extends BroadcastReceiver {
             if (cmd == null) continue;
             cmd = cmd.trim();
             StringBuilder response = new StringBuilder();
-            if (cmd.equals("getActivityDataflow")) {
+            if (cmd.equals("getActivityDataflow")) {   // the dataflow is the dynamic value of intent fields
                 Activity activity = getActivity();
                 if (activity == null) {
                     response.append("NoActivity");
@@ -118,8 +118,8 @@ public class DataFlowAnalysis extends BroadcastReceiver {
                         Log.e("Activity Data Passing", dataflows.toString());
                     }
                 }
-            } else if (cmd.equals("getFragementDataflow")) {
-                Activity activity = getActivity();
+            } else if (cmd.equals("getFragementDataflow")) { // the dataflow is the dynamic value of intent fields
+                Activity activity = getActivity(); 
                 if (activity == null) {
                     response.append("NoActivity");
                 } else {
