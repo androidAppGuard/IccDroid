@@ -20,10 +20,10 @@ The above version of the software has been tested in our experiment and can run 
 <!-- ## Subject Requirements([video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt))
 IccDroid can test both on open-source and closed-source apps:
 * Closed-source apps: the users can directly run “python main.py apk_path” to test the apk.
-* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt)).  -->
+* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/IccDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/IccDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt)).  -->
 
 ## Settings
-Before running IccDroid, please update the [configure.py](https://github.com/androidAppGuard/AutoSQDroid/blob/main/AutoSQDroid/configure.py) as follows:
+Before running IccDroid, please update the [configure.py](https://github.com/androidAppGuard/IccDroid/blob/main/IccDroid/configure.py) as follows:
 ```python
   # Dataflow Server info
   SERVER_HOST = "127.0.0.1"
