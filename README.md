@@ -1,8 +1,8 @@
-# AutoSQDroid Prototype
-AutoSQDroid is a fully automated version of [SQDroid](https://github.com/androidAppGuard/SQDroid). SQDroid is a semantic-driven testing tool for Android apps via Q-learning, while it needs to manually collect the basic functions of each app to calculate the reward and does not take advantage of the dataflow information of these functions. To resolve the problem, AutoSQDroid can automatically extract the dataflow functions in apps from Q-learning exploration stage and once again utilizes these functions to guide the agent generating the meaningful test cases related to dataflow and discovering the abnormal dataflow behaviors.
+# IccDroid Prototype
+IccDroid is an automated testing tool based on reinforcement learning to find ICC-related bugs in Android apps. IccDroid leverages hybrid analysis to build a more complete ICC call graph. Based on this graph, IccDroid further designs an ICC-guided exploration strategy based on Q-learning to improve the testing effectiveness in bug finding. So far, IccDroid has found 13 previously unknown ICC-related bugs, all of which have been confirmed by the app developers and five have already been fixed.
 
 # Update
-All the source code of AutoSQDroid is also publicly available for facilitating the development of automated testing. Next, we will integrate the dataflow acquisition function into the Android framework.
+All the source code of IccDroid is also publicly available for facilitating the development of automated testing. 
 
 # Getting Started
 ## Virtual Machine Requirements
@@ -11,19 +11,19 @@ All the source code of AutoSQDroid is also publicly available for facilitating t
 * Linux: Ubantu 16.04
 * [UiAutomator2](https://github.com/openatx/uiautomator2): 2.16.3 (pip install uiautomator2== 2.16.3)
 ## Android Emulator (AVD) Requirements
-* System images: Android 6.0 x86_64 (Marshmallow)
+* System images: Android 7.0 x86_64 (Marshmallow)
 * RAM: 2048M
 * SD card: 512M
 
-The above version of the software has been tested in our experiment and can run successfully. In addition, please start the emulator before running AutoSQDroid (you can see this [link](https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd) for how to creating and using [avdmanager](https://developer.android.com/studio/command-line/avdmanager)). 
+The above version of the software has been tested in our experiment and can run successfully. In addition, please start the emulator before running IccDroid (you can see this [link](https://stackoverflow.com/questions/43275238/how-to-set-system-images-path-when-creating-an-android-avd) for how to creating and using [avdmanager](https://developer.android.com/studio/command-line/avdmanager)). 
 
-## Subject Requirements([video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt))
-AutoSQDroid can test both on open-source and closed-source apps:
+<!-- ## Subject Requirements([video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt))
+IccDroid can test both on open-source and closed-source apps:
 * Closed-source apps: the users can directly run “python main.py apk_path” to test the apk.
-* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt)). 
+* Open-source apps: If users want to obtain code coverage and dataflow information, the app under test should be instrumented with [plugins/Jacoco](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/jacoco) and [plugins/dataflow/DataFlowAnalysis.java](https://github.com/androidAppGuard/AutoSQDroid/tree/main/plugins/dataflow) files first, and built as an apk file. Then users can run “python main.py apk_path” to test the apk (the detailed process is in the [video tutorial](https://1drv.ms/u/s!AhrQLCaSmZgwamuImvbWUv_1pek?e=fiWDdt)).  -->
 
 ## Settings
-Before running AutoSQDroid, please update the [configure.py](https://github.com/androidAppGuard/AutoSQDroid/blob/main/AutoSQDroid/configure.py) as follows:
+Before running IccDroid, please update the [configure.py](https://github.com/androidAppGuard/AutoSQDroid/blob/main/AutoSQDroid/configure.py) as follows:
 ```python
   # Dataflow Server info
   SERVER_HOST = "127.0.0.1"
@@ -35,8 +35,8 @@ Before running AutoSQDroid, please update the [configure.py](https://github.com/
   DEVICE_SCREEN_WIDTH = 1020
 
   # Time Setting(s)
-  STAGE_ONE_TIME = 3600 # (Q-learning exploration time)
-  STAGE_TWO_TIME = 3600 # (Q-learning Inter-Function Exploration time)
+  STAGE_ONE_TIME = 3600 # (Graph Enhancement Exploration time)
+  STAGE_TWO_TIME = 3600 # (ICC-Guided Exploration time)
 
 ```
 Other configuration information of the configure.py can be selected according to user customization or default configuration.
@@ -44,8 +44,8 @@ Other configuration information of the configure.py can be selected according to
 ## Running
 For applications that require permission or login, you should install apk on the emulator and grant the permissions or login the account begore testing. Then you start AutoSQdroid by:
 ```shell
-  # enter workspace of AutoSQDroid
-  cd /opt/AutoSQDroid 
+  # enter workspace of IccDroid
+  cd /opt/IccDroid 
   # start testing
   python main.py apk_path
 ```
@@ -58,7 +58,7 @@ The output contents are placed in folder ``<apk_dir>/<apk_name>`` and contain co
 	* crash_log_X: record the exception stack log of crash ``crash X``.
 
 # Detailed Description
-In order to better reproduce AutoSQDroid, we provide the app’s ``Link``, ``Version``, ``Strategy`` and the revealed bugs.
+In order to better reproduce IccDroid, we provide the app’s ``Link``, ``Version``, ``Strategy`` and the revealed bugs.
 ## Target Apps
 |APK Name| Executable Lines of Codes| Version|Strategy|GIthub Link|
 |---|---|---|---|---|
